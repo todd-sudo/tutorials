@@ -1,0 +1,4 @@
+UBUNTU:
+
+sudo apt update && sudo apt upgrade -y && sudo apt autoremove
+sudo apt install tmux vim tree python3 python3-venv git python3-pip htop postgresql postgresql-contrib -y

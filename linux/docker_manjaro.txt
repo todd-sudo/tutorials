@@ -1,0 +1,7 @@
+Установка:
+    $ sudo pacman -Syu
+    $ sudo pacman -S docker
+
+Запуск:
+    $ sudo systemctl start docker.service
+    $ sudo systemctl enable docker.service

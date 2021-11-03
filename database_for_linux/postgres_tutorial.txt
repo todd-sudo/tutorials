@@ -1,0 +1,22 @@
+Данные команды дают права на редактирование таблиц в БД отдельному пользователю:
+
+GRANT SELECT ON table_name TO PUBLIC;
+GRANT SELECT, UPDATE, INSERT ON table_name TO user_name;
+GRANT SELECT (col1), UPDATE (col1) ON table_name TO user_name;
+
+--------------------------------------------------------------------------------
+Как изменить пароль в postgres:
+
+Изменить /etc/postgresql/9.1/main/pg_hba.conf (путь будет отличаться) и изменить:
+
+    local   all             all                                     peer
+
+    в
+
+    local   all             all                                     md5
+
+Затем перезапустите сервер:
+
+sudo service postgresql restart
+
+--------------------------------------------------------------------------
